@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sreyas Exam Notifications</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <img src="https://sreyas.ac.in/wp-content/uploads/2022/03/sreyas-college-logo-.png" 
+           alt="College Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#" data-section="home">Home</a></li>
+          <li><a href="#" data-section="results">Results</a></li>
+          <li><a href="#" data-section="register">Register</a></li>
+          <li><a href="#" data-section="about">About</a></li>
+          <li><a href="#" data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1>Sreyas Exam Notifications!!!</h1>
+  </header>
+  <main>
+    <section id="home" class="content-section active">
+      <h2>Welcome to the Sreyas Exam Notifications Portal</h2>
+      <p>Get quick and reliable access to your exam results here.</p>
+    </section>
+
+    <section id="results" class="content-section">
+      <form id="resultForm">
+        <label for="studentId">Enter Student ID:</label>
+        <input type="text" id="studentId" required />
+        <button type="submit">Get Result</button>
+      </form>
+      <div id="result"></div>
+    </section>
+
+    <section id="register" class="content-section">
+      <h2>Register New Student</h2>
+      <form id="registrationForm">
+        <label for="studentId">Student ID:</label>
+        <input type="number" id="regStudentId" required />
+
+        <label for="name">Student Name:</label>
+        <input type="text" id="regName" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="regEmail" required />
+
+        <h3>Subjects:</h3>
+        <div id="subjectFields">
+          <div class="subject-entry">
+            <input type="text" placeholder="Subject Name" class="subject-name" required />
+            <input type="number" placeholder="Marks (optional)" class="subject-marks" />
+          </div>
+        </div>
+        <button type="button" id="addSubjectBtn">➕ Add Subject</button><br><br>
+        <button type="submit">Register Student</button>
+      </form>
+      <div id="registerMessage"></div>
+    </section>
+
+    <section id="about" class="content-section">
+      <h2>About the Portal</h2>
+      <p>This portal is designed to provide students with instant access to their examination results.</p>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:examoffice@sreyas.edu">examoffice@sreyas.edu</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sreyas Exam Notifications Portal. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
